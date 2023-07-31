@@ -19,13 +19,14 @@ body {
 
 .container .left {
     background-image: url(../images/bg-pattern-desktop.svg);
+    background-color: hsla(0, 36%, 70%, 0.2);
     background-size: cover;
     background-position: center center;
     padding: 0 40px 40px;
     width: 60%;
 }
 
-.left .inner-container {
+.left .content {
     max-width: 450px;
     margin: auto;
 }
@@ -40,17 +41,17 @@ body {
     background-position: center center;
 }
 
-.inner-container .logo {
+.content .logo {
     margin: 60px 0;
     width: 200px;
 }
 
-.inner-container .bg-mobile {
+.content .bg-mobile {
     margin-bottom: 2em;
     display: none;
 }
 
-.inner-container h1 {
+.content .title {
     color: hsl(0, 6%, 24%);
     font-size: 60px;
     letter-spacing: 10px;
@@ -61,12 +62,12 @@ body {
     animation: comeinleft .6s ease forwards;
 }
 
-.inner-container h1 span {
+.content .title span {
     color: hsl(0, 36%, 70%);
     font-weight: 200;
 }
 
-.inner-container p {
+.content p {
     color: hsl(0, 36%, 70%);
     line-height: 26px;
     margin: 30px 0;
@@ -75,7 +76,7 @@ body {
     animation: comeinright .6s ease forwards;
 }
 
-.inner-container form {
+.content form {
     position: relative;
     transform: translateX(-100%);
     animation: comeinright .6s ease forwards;
@@ -102,7 +103,7 @@ input::placeholder {
     color: hsl(0, 36%, 70%);
 }
 
-button {
+.button {
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
     box-shadow: 2px 5px 10px hsl(0, 36%, 70%, 0.5);
     border: none;
@@ -117,7 +118,7 @@ button {
     width: 100px;
 }
 
-button:hover {
+.button:hover {
     opacity: .7;
 }
 
@@ -128,11 +129,12 @@ button:hover {
     right: 110px;
 }
 
-form small {
+form span {
     color: hsl(0, 93%, 68%);
     display: none;
     margin-top: 15px;
     margin-left: 30px;
+    font-size: 13px;
 }
 
 @keyframes comeinleft {

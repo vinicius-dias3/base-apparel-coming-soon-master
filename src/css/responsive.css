@@ -1,17 +1,17 @@
 @media (max-width:600px) {
-    .inner-container .logo {
+    .content .logo {
         margin: 30px 0;
         width: 100px;
     }
 
-    .inner-container .bg-mobile {
+    .content .bg-mobile {
         display: block;
         margin-left: -40px;
         margin-right: -40px;
         width: calc(100% + 80px);
     }
 
-    .inner-container h1 {
+    .content .title {
         font-size: 40px;
     }
 
